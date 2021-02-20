@@ -45,7 +45,8 @@ button {
 }
 
 button:focus,
-input:focus {
+input:focus,
+a:focus {
   outline: none;
 }
 
@@ -184,11 +185,16 @@ input:focus {
 }
 
 .side-menu-main .side-menu .side-menu-link {
-  padding: 1.5rem 0;
   font-size: 2rem;
   color: grey;
   margin-bottom: 2rem;
   border-bottom: 1px solid #eee;
+}
+
+.side-menu-link a {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 0;
 }
 
 .side-menu-main .btn-side-menu {
