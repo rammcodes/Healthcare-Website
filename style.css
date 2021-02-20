@@ -80,7 +80,6 @@ input:focus {
   color: #fff;
   border-radius: var(--commonBorderRadius);
   font-size: 1.6rem;
-
   font-weight: 700;
 }
 
@@ -151,6 +150,70 @@ input:focus {
   }
   .nav-cta {
     display: none;
+  }
+}
+
+/* Side Menu */
+.side-menu-cont {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.side-menu-main {
+  padding: 3rem 3rem;
+  overflow-y: scroll;
+  height: 100%;
+  background: #fff;
+  width: 50%;
+  margin-left: auto;
+}
+
+.side-menu-main .close-cont {
+  width: 5rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+}
+
+.side-menu-main .close-cont img {
+  width: 100%;
+}
+
+.side-menu-main .side-menu .side-menu-link {
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  color: grey;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.side-menu-main .btn-side-menu {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.show-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .show-menu {
+    display: unset;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .side-menu-main {
+    width: 80%;
   }
 }
 
